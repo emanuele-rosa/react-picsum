@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Box, Grid, CircularProgress, Typography } from '@mui/material';
 import ImageCard from '../ImageCard/ImageCard';
 import { useImageContext } from '../../contexts/imageContext';

@@ -1,12 +1,11 @@
 import { createContext, useState, useEffect, useContext } from 'react';
 import axios from 'axios';
-import PropTypes from 'prop-types';
 
 const ImageContext = createContext();
 
 export const useImageContext = () => useContext(ImageContext);
 
-export const ImageContextProvider = ({ children }) => {
+export const ImageContextProvider = ( children ) => {
   const [allImages, setAllImages] = useState([]); 
   const [filteredImages, setFilteredImages] = useState([]); 
   const [searchTerm, setSearchTerm] = useState('');
@@ -55,9 +54,6 @@ export const ImageContextProvider = ({ children }) => {
       {children}
     </ImageContext.Provider>
   );
-};
-ImageContextProvider.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 export default ImageContext;

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { 
   Modal, 
   Box, 
@@ -9,7 +9,7 @@ import {
 import CloseIcon from '@mui/icons-material/Close';
 import { styles } from './styles';
 
-const ImageModal = ({ open, onClose, image }) => {
+const ImageModal = ( open, onClose, image ) => {
   return (
     <Modal
       open={open}

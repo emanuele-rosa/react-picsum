@@ -2,9 +2,8 @@ import { useState } from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@mui/material';
 import ImageModal from '../ImageModal/ImageModal';
 import { styles } from './styles';
-import PropTypes from 'prop-types';
 
-const ImageCard = ({ image }) => {
+const ImageCard = ( image ) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -32,12 +31,5 @@ const ImageCard = ({ image }) => {
     </>
   );
 };
-
-ImageCard.propTypes = {
-    image: PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      author: PropTypes.string.isRequired
-    }).isRequired
-  };
 
 export default ImageCard;
