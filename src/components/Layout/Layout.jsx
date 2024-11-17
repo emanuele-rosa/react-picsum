@@ -1,7 +1,8 @@
+import React from 'react';
 import { Box } from '@mui/material';
 import { styles } from './styles';
 
-const Layout = (children ) => {
+const Layout = ({ children }) => {
   return (
     <Box sx={styles.root}>
       <main style={styles.main}>{children}</main>
@@ -10,3 +11,4 @@ const Layout = (children ) => {
 };
 
 export default Layout;
+

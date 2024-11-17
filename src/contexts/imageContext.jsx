@@ -1,11 +1,11 @@
-import { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 
 const ImageContext = createContext();
 
 export const useImageContext = () => useContext(ImageContext);
 
-export const ImageContextProvider = ( children ) => {
+export const ImageContextProvider = ({ children }) => {
   const [allImages, setAllImages] = useState([]); 
   const [filteredImages, setFilteredImages] = useState([]); 
   const [searchTerm, setSearchTerm] = useState('');

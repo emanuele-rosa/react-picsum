@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@mui/material';
 import ImageModal from '../ImageModal/ImageModal';
 import { styles } from './styles';
 
-const ImageCard = ( image ) => {
+const ImageCard = ({ image }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -33,3 +33,4 @@ const ImageCard = ( image ) => {
 };
 
 export default ImageCard;
+
